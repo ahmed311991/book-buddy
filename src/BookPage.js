@@ -11,8 +11,6 @@ function BookPage() {
   const [isLogin, setIsLogin] = useState(false);
   const [token, setToken] = useState(null);
 
-  console.log("IS LOGIN", book);
-
   const checkoutBook = async () => {
     if (token === null) {
       return alert("No Token Available, Please login");
